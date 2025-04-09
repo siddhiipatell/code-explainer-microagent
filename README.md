@@ -28,7 +28,7 @@ Try it locally 👇
 ## 🧰 Tech Stack
 
 - [Streamlit](https://streamlit.io/)
-- [OpenAI API](https://platform.openai.com/)
+- [Ollama](https://ollama.com/)
 - Python 3.8+
 - dotenv for API key management
 
