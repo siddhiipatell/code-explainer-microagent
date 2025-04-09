@@ -1,15 +1,12 @@
 from ollama import Client
 import re
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
+import streamlit as st
 
 def call_ollama_api(model, messages, temperature=0.2, format_schema=None, stream=False):
     """
     Call the ollama api and return the response.
     """
-    BASE_URL=os.getenv("OLLAMA_BASE_URL")
+    BASE_URL=st.secrets["OLLAMA_BASE_URL"]
     
     client = Client(BASE_URL)
 
